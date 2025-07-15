@@ -1,4 +1,4 @@
-🎓 Halcyon Certificate Generator
+<h1>🎓 Halcyon Certificate Generator</h1> <br>
 Empowering event organizers to seamlessly manage volunteer data and automate certificate generation with an intuitive web application.
 
 🚀 Inspiration
