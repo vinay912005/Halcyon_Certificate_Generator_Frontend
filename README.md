@@ -1,96 +1,80 @@
-<h1>🎓 Halcyon Certificate Generator</h1> <br>
-Empowering event organizers to seamlessly manage volunteer data and automate certificate generation with an intuitive web application.
+<h1>🎓 Halcyon Certificate Generator</h1>
+  <p>Empowering event organizers to seamlessly manage volunteer data and automate certificate generation with an intuitive web application.</p>
 
-🚀 Inspiration
-At Halcyon, the dedication and effort of every volunteer form the backbone of our success. Recognizing their contributions in a timely and organized manner is essential—but manual certificate creation and distribution can be tedious, error-prone, and time-consuming.
+  <h2>🚀 Inspiration</h2>
+  <p>
+    At Halcyon, the dedication and effort of every volunteer form the backbone of our success. Recognizing their contributions in a timely and organized manner is essential—but manual certificate creation and distribution can be tedious, error-prone, and time-consuming.
+  </p>
+  <p>
+    To solve this, we developed a <strong>Certificate Generator Web App</strong> that streamlines the process: from uploading volunteer data to designing personalized certificates, and finally, sending them via email—all from one platform.
+  </p>
 
-To solve this, we developed a Certificate Generator Web App that streamlines the process: from uploading volunteer data to designing personalized certificates, and finally, sending them via email—all from one platform.
+  <h2>🤖 What It Does</h2>
+  <p>
+    The <strong>Halcyon Certificate Generator</strong> is a complete frontend-based tool that allows event heads to:
+  </p>
+  <ul>
+    <li>Log in securely for their specific event.</li>
+    <li>Upload Excel files containing volunteer data.</li>
+    <li>Automatically generate visually appealing certificates using HTML canvas.</li>
+    <li>Instantly send personalized certificates to each volunteer via email using <strong>EmailJS</strong>.</li>
+  </ul>
 
-🤖 What It Does
-The Halcyon Certificate Generator is a complete frontend-based tool that allows event heads to:
+  <h2>💡 Key Features</h2>
 
-Log in securely for their specific event.
+  <h3>1️⃣ Event-Based Login System</h3>
+  <p>Each event head receives a unique login to ensure that certificate generation is securely tied to their specific event.</p>
 
-Upload Excel files containing volunteer data.
+  <h3>2️⃣ Excel Upload for Volunteer Data</h3>
+  <p>Easily upload <code>.xlsx</code> files containing volunteer details like name, email, and role. The system parses and processes the data with high accuracy.</p>
 
-Automatically generate visually appealing certificates using HTML canvas.
+  <h3>3️⃣ Real-Time Certificate Generation</h3>
+  <p>Certificates are generated dynamically using HTML Canvas. You can preview each certificate before sending, ensuring design and content accuracy.</p>
 
-Instantly send personalized certificates to each volunteer via email using EmailJS.
+  <h3>4️⃣ Automatic Email Sending (via EmailJS)</h3>
+  <p>Once certificates are generated, they're emailed to the volunteers using <strong>EmailJS</strong>. No backend setup required—just configure your EmailJS keys, and you're good to go.</p>
 
-This automation significantly reduces the workload of organizers and ensures a professional and prompt acknowledgment of volunteer efforts.
+  <h2>🛠️ Tech Stack</h2>
+  <ul>
+    <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Libraries:</strong> SheetJS, EmailJS, Canvas API</li>
+    <li><strong>Tools:</strong> Excel, GitHub, VS Code</li>
+  </ul>
 
-💡 Key Features
-1️⃣ Event-Based Login System
-Each event head receives a unique login to ensure that certificate generation is securely tied to their specific event.
+  <h2>🏗️ How to Run It Locally</h2>
+  <p><strong>Prerequisites:</strong></p>
+  <ul>
+    <li>Git</li>
+    <li>Basic HTML/CSS/JS setup</li>
+    <li>A valid <a href="https://www.emailjs.com/" target="_blank">EmailJS</a> account</li>
+  </ul>
 
-2️⃣ Excel Upload for Volunteer Data
-Easily upload .xlsx files containing volunteer details like name, email, and role. The system parses and processes the data with high accuracy.
+  <p>Steps:</p>
+  <ol>
+    <li>Clone the repository:
+      <pre><code>git clone https://github.com/yourusername/halcyon-certificate-generator.git</code></pre>
+    </li>
+    <li>Navigate to the folder:
+      <pre><code>cd halcyon-certificate-generator</code></pre>
+    </li>
+    <li>Open <code>index.html</code> in your browser.</li>
+    <li>Configure your EmailJS service, template, and keys in the JS file.</li>
+    <li>Upload your Excel file and click send. Done!</li>
+  </ol>
 
-3️⃣ Real-Time Certificate Generation
-Certificates are generated dynamically using HTML Canvas. You can preview each certificate before sending, ensuring design and content accuracy.
+  <h2>✉️ Excel Format Guidelines</h2>
+  <p>The uploaded Excel file should have the following columns:</p>
+  <ul>
+    <li><code>Name</code></li>
+    <li><code>Email</code></li>
+    <li><code>Event</code></li>
+    <li>Any additional fields you want to include in the certificate</li>
+  </ul>
 
-4️⃣ Automatic Email Sending (via EmailJS)
-Once certificates are generated, they're emailed to the volunteers using EmailJS. No backend setup required—just configure your EmailJS keys, and you're good to go.
-
-🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript
-
-Libraries: SheetJS (Excel parsing), EmailJS (email sending), Canvas API (certificate rendering)
-
-Tools: Excel, GitHub, VS Code
-
-🏗️ How to Run It Locally
-Prerequisites:
-
-Git
-
-Basic HTML/CSS/JS setup
-
-A valid EmailJS account
-
-Clone the Repository
-
-bash
-Copy code
-git clone https://github.com/yourusername/halcyon-certificate-generator.git
-cd halcyon-certificate-generator
-Open index.html
-
-Open the index.html file directly in your browser. No backend or server setup required.
-
-Configure EmailJS
-
-Create a new service and template in your EmailJS dashboard.
-
-Replace YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, and YOUR_PUBLIC_KEY in the JavaScript file with actual values.
-
-Make sure your email template fields match the variables passed from the form.
-
-Upload Excel and Send Certificates
-
-Use the upload section to import the .xlsx file with volunteer data.
-
-Customize the certificate design if needed.
-
-Click Send to deliver certificates via email.
-
-✉️ Excel Format Guidelines
-The uploaded Excel file should have the following columns:
-
-Name
-
-Email
-
-Event
-
-(Any additional fields you want to include in the certificate)
-
-🌱 Future Scope
-🔒 Admin Dashboard: Centralized control panel for all event heads and logs.
-
-🎨 Drag & Drop Certificate Designer: Visually place text, images, and logos.
-
-📊 Analytics Dashboard: Track how many certificates were generated and delivered.
-
-🧠 Template Suggestions: Use AI to suggest certificate designs based on the event type.
-
+  <h2>🌱 Future Scope</h2>
+  <ul>
+    <li>🔒 Admin Dashboard for centralized control</li>
+    <li>🎨 Drag & Drop Certificate Designer</li>
+    <li>📊 Analytics Dashboard to track delivery status</li>
+    <li>🧠 AI-based template suggestions</li>
+  </ul>
